@@ -1,0 +1,51 @@
+.srr-top {
+  display: grid;
+  grid-template-columns: 60px auto;
+  gap: 10px;
+}
+.recent-review-scrollable-container {
+  overflow-y: auto;
+  height: 480px;
+  padding: 10px;
+}
+.recent-review-scrollable-container::-webkit-scrollbar {
+  width: 5px;
+}
+.recent-review-scrollable-container::-webkit-scrollbar-thumb {
+  background-color: #6b778b;
+}
+.srr-top > img {
+  border-radius: 50%;
+  height: 60px;
+}
+.srr-customer-name {
+  font-size: 19px;
+  font-weight: 500;
+  color: #444;
+  white-space: nowrap;
+}
+
+.rating-icon {
+  height: 20px;
+}
+.srr-top-right-rating {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.srr-top-right-rating > span:last-child {
+  margin-top: -4px;
+}
+.single-recent-review {
+  background-color: #ffe5f359;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 3px;
+}
+.single-recent-review:last-child {
+  margin-bottom: 0;
+}
+.srr-desc {
+  padding-top: 10px;
+  color: #666;
+}

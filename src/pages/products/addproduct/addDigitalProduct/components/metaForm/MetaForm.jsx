@@ -1,0 +1,32 @@
+import React from "react";
+
+const MetaForm = () => {
+  return (
+    <div className="single-widget">
+      <div className="widget-title">Meta Tags</div>
+      <div className="widget-container">
+        <div className="ap-single-content">
+          <p>Meta Title</p>
+          <input type="text" />
+        </div>
+        <div className="ap-single-content">
+          <p>Description</p>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div className="ap-single-content">
+          <div>
+            <p>Meta Image</p>
+          </div>
+          <div>
+            <div className="custom-browse">
+              <div>Browse</div>
+              <div>Choose File</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MetaForm;

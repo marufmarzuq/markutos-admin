@@ -1,0 +1,10 @@
+.product-informaiton-form {
+  display: grid;
+  grid-template-columns: 160px auto;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.react-tag-input__input {
+  border: none !important;
+}

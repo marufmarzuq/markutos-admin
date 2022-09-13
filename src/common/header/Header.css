@@ -1,0 +1,123 @@
+.header-cotainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding-left: 15px;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header-admin-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #2c3c53;
+  height: 65px;
+  padding: 0 25px 0 10px;
+  cursor: pointer;
+}
+.header-circle-icon {
+  height: 34px;
+  width: 34px;
+  background-color: #f2f3f8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+.header-circle-icon svg {
+  font-size: 17px;
+  color: #222;
+  transition: 0.3s;
+}
+
+.header-circle-icon:hover {
+  background-color: #e2eeff;
+}
+.header-circle-icon:hover svg {
+  color: #4782da;
+}
+
+span.hci-notification-dot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+}
+.hap-icon {
+  background-color: #4b607c;
+  height: 45px;
+  width: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hap-icon svg {
+  font-size: 30px;
+  color: #ddd;
+}
+.hap-greeting {
+  font-size: 12px;
+  font-weight: 400;
+  color: #ddd;
+}
+.hap-title {
+  font-weight: 400;
+  color: #ddd;
+  font-size: 14px;
+}
+
+/* Responsive */
+.mobile-menu {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .mobile-menu {
+    display: flex;
+  }
+}
+button.mobile-menu-btn {
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: #c7d6ec33;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+button.mobile-menu-btn:hover {
+  background-color: #81a7e033;
+}
+button.mobile-menu-btn svg {
+  font-size: 29px;
+  color: #333;
+}
+
+@media (max-width: 1000px) {
+  .header-admin-profile > div:last-child {
+    display: none;
+  }
+  .header-admin-profile {
+    padding: 0 10px;
+  }
+}
